@@ -7,7 +7,9 @@ FONT = ('Courier', 20, 'normal')
 class ScoreBoard(Turtle):
     def __init__(self):
         super().__init__()
-        self.history_score = 0
+        with open("data.txt", "r") as data:
+            content = int(data.read())
+            self.history_score = content
         self.score = 0
         self.color('black')
         self.penup()
@@ -19,6 +21,8 @@ class ScoreBoard(Turtle):
     def update_scoreboard(self):
         if self.score > self.history_score:
             self.history_score = self.score
+            with open("data.txt", "w") as data:
+                data.write(str(self.history_score))
         self.write(f"Score: {self.score}  history highest score:{self.history_score}", align=ALIGNMENT, font=FONT)
 
     def increase_score(self):
