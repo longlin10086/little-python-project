@@ -7,6 +7,7 @@ FONT = ('Courier', 20, 'normal')
 class ScoreBoard(Turtle):
     def __init__(self):
         super().__init__()
+        self.history_score = 0
         self.score = 0
         self.color('black')
         self.penup()
@@ -16,7 +17,9 @@ class ScoreBoard(Turtle):
         self.hideturtle()
 
     def update_scoreboard(self):
-        self.write(f"Score: {self.score}", align=ALIGNMENT, font=FONT)
+        if self.score > self.history_score:
+            self.history_score = self.score
+        self.write(f"Score: {self.score}  history highest score:{self.history_score}", align=ALIGNMENT, font=FONT)
 
     def increase_score(self):
         self.clear()
