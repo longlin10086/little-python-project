@@ -19,17 +19,19 @@ while game_is_on:
     screen.onkeypress(key="Up", fun=player.move)
     car.create_cars()
     car.move()
+    scoreboard.update_timeboard()
     time.sleep(0.1)
     screen.update()
 
     for one_car in car.car_list:
-        if player.distance(one_car) < 30:
+        if player.distance(one_car) < 30 or scoreboard.crossing_time >= 300:
             game_is_on = False
             car.clear_screen()
             scoreboard.game_over()
             screen.update()
 
     if player.check_again():
+        scoreboard.adding_time()
         scoreboard.increase_score()
         car.add_level()
 
