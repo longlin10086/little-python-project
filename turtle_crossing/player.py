@@ -23,3 +23,8 @@ class Player(Turtle):
             self.goto(STARTING_POSITION)
             return True
         return False
+
+    def player_again(self):
+        self.hideturtle()
+        self.setposition(STARTING_POSITION)
+        self.showturtle()

@@ -31,6 +31,11 @@ class CarManager:
         for car in self.car_list:
             car.hideturtle()
 
+    def game_again(self):
+        self.car_list.clear()
+        self.level = 1
+        self.distance = STARTING_MOVE_DISTANCE
+
     def add_level(self):
         self.level += 1
         self.distance += MOVE_INCREMENT

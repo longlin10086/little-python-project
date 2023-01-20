@@ -41,3 +41,10 @@ class Scoreboard(Turtle):
         self.write("BEGIN!", align=ALIGNMENT, font=FONT)
         time.sleep(0.5)
         self.clear()
+
+    def scoreboard_again(self):
+        self.level = 1
+        self.clear()
+        self.count_down()
+        self.goto(-280, 260)
+        self.update_scoreboard()

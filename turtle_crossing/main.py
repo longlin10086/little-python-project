@@ -12,10 +12,11 @@ player = Player()
 car = CarManager()
 scoreboard = Scoreboard()
 
-screen.listen()
-screen.onkeypress(key="Up", fun=player.move)
+
 game_is_on = True
 while game_is_on:
+    screen.listen()
+    screen.onkeypress(key="Up", fun=player.move)
     car.create_cars()
     car.move()
     time.sleep(0.1)
@@ -31,5 +32,15 @@ while game_is_on:
     if player.check_again():
         scoreboard.increase_score()
         car.add_level()
+
+    if not game_is_on:
+        user_answer = screen.textinput(title="AGAIN", prompt="Do you want to play again? Type 'yes' or 'no'.").lower()
+        if user_answer[0] == 'y':
+            game_is_on = True
+            car.game_again()
+            player.player_again()
+            scoreboard.scoreboard_again()
+            screen.update()
+
 
 screen.exitonclick()
