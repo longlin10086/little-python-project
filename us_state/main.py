@@ -28,9 +28,11 @@ while is_on_game:
     if answer_state[0] == "Q" or len(state.state_list) >= 50:
         is_on_game = False
 
-for item in state_list:
-    if item not in answer:
-        state_list_ignore.append(item)
+# for item in state_list:
+#     if item not in answer:
+#         state_list_ignore.append(item)
+
+state_list_ignore = [item for item in state_list if item not in answer]
 
 df = pandas.DataFrame(state_list_ignore)
 df.to_csv("missing_state.csv")
