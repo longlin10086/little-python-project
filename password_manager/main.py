@@ -41,14 +41,14 @@ def add_to_data():
     elif is_ok := messagebox.askokcancel(title=web, message=f"These are the details entered: \nEmail: {email}\n" 
                                                             f"Password: {password}\nIs it ok to save?"):
         try:
-            with open("data.json", "r") as data_file:
+            with open("/personal_info/password.json", "r") as data_file:
                 data = json.load(data_file)
                 data.update(new_data)
         except FileNotFoundError:
-            with open("data.json", "w") as data_file:
+            with open("/personal_info/password.json", "w") as data_file:
                 json.dump(new_data, data_file, indent=4)
         else:
-            with open("data.json", "w") as data_file:
+            with open("/personal_info/password.json", "w") as data_file:
                 json.dump(data, data_file, indent=4)
 
         website_entry.delete(0, END)
@@ -59,7 +59,7 @@ def add_to_data():
 def find_password():
     web = website_entry.get().title()
     try:
-        with open("data.json", "r") as data_file:
+        with open("/personal_info/password.json", "r") as data_file:
             data = json.load(data_file)
     except FileNotFoundError:
         messagebox.showinfo(title="Error", message="No Data File Found")
