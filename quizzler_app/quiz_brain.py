@@ -25,3 +25,4 @@ class QuizBrain:
             self.score += 1
             return True
         return False
+
