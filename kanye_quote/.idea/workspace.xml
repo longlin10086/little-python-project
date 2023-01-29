@@ -2,17 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9085c1a7-c7f5-495f-8efb-bb6b99451ada" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/../flash_card/data/learned_word.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/kanye_quote.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/background.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kanye.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../password_manager/.idea/csv-plugin.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../quizzler_app/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../quizzler_app/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../quizzler_app/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../quizzler_app/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../quizzler_app/.idea/quizzler_app.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../quizzler_app/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../quizzler_app/data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../quizzler_app/images/false.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../quizzler_app/images/true.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../quizzler_app/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../quizzler_app/question_model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../quizzler_app/quiz_brain.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../quizzler_app/ui.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,11 +34,11 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "WebServerToolWindowFactoryState": "false"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="kanye_quote" />
@@ -69,6 +72,9 @@
       <option name="presentableId" value="Default" />
       <updated>1674897314601</updated>
       <workItem from="1674897318172" duration="927000" />
+      <workItem from="1674974003884" duration="348000" />
+      <workItem from="1674974692269" duration="202000" />
+      <workItem from="1674974909743" duration="6000" />
     </task>
     <servers />
   </component>
@@ -76,6 +82,6 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/kanye_quote$main.coverage" NAME="main 覆盖结果" MODIFIED="1674897557058" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/kanye_quote$main.coverage" NAME="main 覆盖结果" MODIFIED="1674974706435" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
